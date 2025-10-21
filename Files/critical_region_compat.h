@@ -5,7 +5,9 @@
 #ifdef __ASSEMBLER__
 // Assembler bu dosyayı görürse hiçbir şey yapma.
 #else
-
+#pragma once
+#include "sdk_config.h"  // önce kullanıcı ayarları
+#include "nrfx.h"               //
 #ifndef __has_builtin
   #define __has_builtin(x) 0
 #endif

@@ -1,6 +1,7 @@
 Output/Debug/Obj/Hakan_52840/app_util_platform.o: \
  D:\Hakan_SES\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_util_platform.c \
- Files/critical_region_compat.h ../../../../../../modules/nrfx/nrfx.h \
+ Files/critical_region_compat.h Config/sdk_config.h \
+ ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdint.h \

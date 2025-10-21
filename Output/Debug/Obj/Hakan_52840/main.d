@@ -1,6 +1,7 @@
 Output/Debug/Obj/Hakan_52840/main.o: \
  D:\Hakan_SES\nRF5_SDK_17.1.0_ddde560\examples\peripheral\flash_fds\pca10056\s140\ses\main.c \
- Files/critical_region_compat.h ../../../../../../modules/nrfx/nrfx.h \
+ Files/critical_region_compat.h Config/sdk_config.h \
+ ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdint.h \
@@ -64,7 +65,6 @@ Output/Debug/Obj/Hakan_52840/main.o: \
  ../../../../../../components/libraries/fstorage/nrf_fstorage.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
  ../../../../../../components/libraries/timer/app_timer.h \
- Config/sdk_config.h \
  ../../../../../../components/libraries/log/nrf_log_instance.h \
  ../../../../../../components/libraries/log/nrf_log_types.h \
  ../../../../../../components/libraries/sortlist/nrf_sortlist.h \

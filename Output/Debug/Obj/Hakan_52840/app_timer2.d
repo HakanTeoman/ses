@@ -1,6 +1,7 @@
 Output/Debug/Obj/Hakan_52840/app_timer2.o: \
  D:\Hakan_SES\nRF5_SDK_17.1.0_ddde560\components\libraries\timer\app_timer2.c \
- Files/critical_region_compat.h ../../../../../../modules/nrfx/nrfx.h \
+ Files/critical_region_compat.h Config/sdk_config.h \
+ ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdint.h \
@@ -55,7 +56,6 @@ Output/Debug/Obj/Hakan_52840/app_timer2.o: \
  ../../../../../../components/softdevice/s140/headers/nrf_soc.h \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
  D:\Hakan_SES\nRF5_SDK_17.1.0_ddde560\components\libraries\timer\app_timer.h \
- Config/sdk_config.h \
  ../../../../../../components/libraries/util/app_error.h \
  ../../../../../../components/libraries/log/nrf_log_instance.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \

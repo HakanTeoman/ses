@@ -1,6 +1,7 @@
 Output/Debug/Obj/Hakan_52840/crc16.o: \
  D:\Hakan_SES\nRF5_SDK_17.1.0_ddde560\components\libraries\crc16\crc16.c \
- Files/critical_region_compat.h ../../../../../../modules/nrfx/nrfx.h \
+ Files/critical_region_compat.h Config/sdk_config.h \
+ ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdint.h \
@@ -56,7 +57,7 @@ Output/Debug/Obj/Hakan_52840/crc16.o: \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/string.h \
- Config/sdk_config.h ../../../../../../components/libraries/util/sdk_os.h \
+ ../../../../../../components/libraries/util/sdk_os.h \
  ../../../../../../components/libraries/util/app_util.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  D:\Hakan_SES\nRF5_SDK_17.1.0_ddde560\components\libraries\crc16\crc16.h \
