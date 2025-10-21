@@ -82,6 +82,34 @@ static void startup_led_blink(void)
 
 
 
+//#pragma message("ACTIVE SDK_CONFIG PATH: " __FILE__)
+//#if NRFX_TWIM_ENABLED
+//#pragma message("CHECK: NRFX_TWIM_ENABLED=1 (main.c)")
+//#else
+//#pragma message("CHECK: NRFX_TWIM_ENABLED=0 (main.c)")
+//#endif
+//#if NRFX_TWIM0_ENABLED
+//#pragma message("CHECK: NRFX_TWIM0_ENABLED=1 (main.c)")
+//#else
+//#pragma message("CHECK: NRFX_TWIM0_ENABLED=0 (main.c)")
+//#endif
+//#ifndef LOG
+//#define LOG(fmt, ...) SEGGER_RTT_printf(0, fmt "\r\n", ##__VA_ARGS__)
+//#endif
+
+
+
+//#if !NRFX_TWIM_ENABLED
+//# error "NRFX_TWIM_ENABLED=1 yap"
+//#endif
+//#if !NRFX_TWIM0_ENABLED
+//# error "NRFX_TWIM0_ENABLED=1 yap"
+//#endif
+
+
+
+// BLE olayl arını dinle
+
 
 
 static inline void app_idle(void)
@@ -90,6 +118,7 @@ static inline void app_idle(void)
     app_sched_execute();
 #endif
     /* Nordic örnekleri genelde LOG -> nrf_pwr_mgmt_run() yapar. 
+       Burada SD var; WFE/SEV üzerinden SD’ye CPU bırakmak için: */
     (void)sd_app_evt_wait();
 }
 
@@ -1993,7 +2022,8 @@ very_early_probe();
 
       fds_log_layout();
       APP_ERROR_CHECK(fds_register(fds_evt_handler));
-
+    //SEGGER_RTT_WriteString(0, "FDS: kickoff (immediate)\r\n");
+        //APP_ERROR_CHECK(fds_register(fds_evt_handler));
     APP_ERROR_CHECK(fds_init());   // EVT_INIT gelecektir; fds_evt_handler içinde load edeceğiz
     ////// 2.5 sn sonra FDS REGISTER (bloklamadan) – kesinlikle scheduler üzerinden
     //APP_ERROR_CHECK(app_timer_create(&m_fds_kick_tmr, APP_TIMER_MODE_SINGLE_SHOT, fds_kickoff));

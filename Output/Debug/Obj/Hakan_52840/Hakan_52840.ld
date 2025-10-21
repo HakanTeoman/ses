@@ -25,7 +25,7 @@ SECTIONS
   {
     __reserved_ram_start__ = .;
     *(.reserved_ram .reserved_ram.*)
-    . = MAX(__reserved_ram_start__ + 0x20002260-0x20000000 , .);
+    . = MAX(__reserved_ram_start__ + 0x20003480;-0x20000000 , .);
   }
   __reserved_ram_end__ = __reserved_ram_start__ + SIZEOF(.reserved_ram);
   __reserved_ram_size__ = SIZEOF(.reserved_ram);
@@ -33,10 +33,10 @@ SECTIONS
 
   . = ASSERT(__reserved_ram_start__ == __reserved_ram_end__ || (__reserved_ram_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__ , "error: .reserved_ram is too large to fit in RAM1 memory segment");
 
-  . = ASSERT(__reserved_ram_size__ <= 0x20002260-0x20000000 , "error: .reserved_ram section is larger than specified size");
+  . = ASSERT(__reserved_ram_size__ <= 0x20003480;-0x20000000 , "error: .reserved_ram section is larger than specified size");
 
-  __vectors_ram_load_start__ = 0x20002260;
-  .vectors_ram 0x20002260 (NOLOAD) : AT(0x20002260)
+  __vectors_ram_load_start__ = 0x20003480;;
+  .vectors_ram 0x20003480; (NOLOAD) : AT(0x20003480;)
   {
     __vectors_ram_start__ = .;
     __app_ram_start__ =   __vectors_ram_start__;
@@ -67,7 +67,7 @@ SECTIONS
   {
     __reserved_flash_start__ = .;
     *(.reserved_flash .reserved_flash.*)
-    . = MAX(__reserved_flash_start__ + 0x27000-0x0 , .);
+    . = MAX(__reserved_flash_start__ + 0x26000;-0x0 , .);
   }
   __reserved_flash_end__ = __reserved_flash_start__ + SIZEOF(.reserved_flash);
   __reserved_flash_size__ = SIZEOF(.reserved_flash);
@@ -75,10 +75,10 @@ SECTIONS
 
   . = ASSERT(__reserved_flash_start__ == __reserved_flash_end__ || (__reserved_flash_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__ , "error: .reserved_flash is too large to fit in FLASH1 memory segment");
 
-  . = ASSERT(__reserved_flash_size__ <= 0x27000-0x0 , "error: .reserved_flash section is larger than specified size");
+  . = ASSERT(__reserved_flash_size__ <= 0x26000;-0x0 , "error: .reserved_flash section is larger than specified size");
 
-  __vectors_load_start__ = 0x27000;
-  .vectors 0x27000 : AT(0x27000)
+  __vectors_load_start__ = 0x26000;;
+  .vectors 0x26000; : AT(0x26000;)
   {
     __vectors_start__ = .;
     *(.vectors .vectors.*)
