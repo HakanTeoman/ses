@@ -90,7 +90,6 @@ static inline void app_idle(void)
     app_sched_execute();
 #endif
     /* Nordic örnekleri genelde LOG -> nrf_pwr_mgmt_run() yapar. 
-       Burada SD var; WFE/SEV üzerinden SD’ye CPU bırakmak için: */
     (void)sd_app_evt_wait();
 }
 
