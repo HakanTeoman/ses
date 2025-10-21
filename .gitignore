@@ -1,0 +1,27 @@
+# SEGGER/SES geçici dosyalar
+*.jlink
+*.jdebug
+*.emSession
+*.browse
+*.map
+*.map.xml
+*.log
+
+# Build çıktıları
+Output/
+output/
+_build/
+build/
+*.o
+*.elf
+*.hex
+*.bin
+*.lst
+*.dep
+*.d
+
+# IDE meta
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
